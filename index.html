@@ -56,7 +56,11 @@ footer {
     width: 100%;
   }
   .yokonarabe > div.single img {
-    max-width: 100%;
+    width: 100%;
+    object-fit:cover;
+  }
+  .yokonarabe > div.single > div.container > div.card > div.img {
+    max-width: 60px;
     object-fit:cover;
   }
   .yokonarabe > div {
@@ -66,6 +70,38 @@ footer {
     max-width: 100%;
     object-fit:cover;
   }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em 0;
+  text-align: left;
+  background: #3af;
+}
+.card {
+  width: 260px;
+  display: flex;
+  background: #eee;
+  padding: .6em 1em .6em .6em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 10px;
+  border: solid 1px #ccc;
+}
+.img {
+  min-width: 60px;
+  height: 60px;
+  object-fit:cover;
+  border-radius: .3em;
+  background: linear-gradient(to bottom, #d6c091 0%, #C05C9A 100%);
+  opacity: .7;
+  margin: 0 .6em 0 0;
+  border: solid 1px firebrick;
+}
+.card h3 {
+  margin: 0;
+  font-size: 1em;
 }
 -->
 </style>
@@ -80,7 +116,7 @@ footer {
   <div class="single" >
   <center>
     <p><font style="font-size:24pt;font-weight:900;color:#fff;">▶︎ エンジニアの自己紹介</font></p>
-    <img src="./images/vitaeipsum_home_banner.png">
+    <img src="./images/vitaeipsum_home_banner.svg">
     <p><font style="font-size:24pt;font-weight:900;color:#fff;">エンジニアたちの交流</font></p>
   </center>
   </div>
@@ -139,6 +175,31 @@ footer {
   </div>
   <div>
   <img src="./images/vitae_sendmessage.png">
+  </div>
+</div>
+<div class="yokonarabe">
+  <div class="single" style="padding:40px;">
+    <font style="font-size:18pt; color:#fff;">▼&nbsp;エンジニア向け自己紹介vitaeipsumを導入しているコミュニティ</font>
+    <div class="container">
+      <div class="card">
+        <div class="img"><img src="./images/CodeForFree_logo.png" style="width:60px;height:60px;" ></div>
+        <div class="content">
+          <h3>Code for Free</h3><font style="font-size:12pt;color:#777;">code-for-free</font><br><br>フリーランスエンジニアの案件獲得のためのコミュニティ<br><br>
+          <a href="https://join.slack.com/t/code-for-free/shared_invite/zt-pi14pz68-qi_iLpwOht2AqVVATTpRjg"><img src="images/participate_button.png" style="width:120px;height:60px;text-align:center;"></a>
+        </div>
+      </div>
+      <div class="card" style="padding:10px;" >
+          <div class="img">
+            <div style="width:60px;height:60px;background:#555;font-size:20pt;font-weight:900;color:#fff;display:table-cell;vertical-align:middle;text-align:center;">A</div>
+          </div>
+        <div class="content">
+        <h3>ATコミュニティー</h3><font style="font-size:12pt;color:#777;">at-commu</font>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
   </div>
 </div>
     <footer style="font-size:16pt; line-height:84pt;" >
